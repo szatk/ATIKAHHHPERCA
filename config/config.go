@@ -25,13 +25,11 @@ func initMigration() {
 	DB.AutoMigrate(
 		&model.Admins{},
 		&model.HousePerca{},
-		// &model.Deskripsi{},
-		// &model.Fakultas{},
-		// &model.FasilitasJurusan{},
-		// &model.FasilitasKampus{},
-		// &model.FasilitasKelas{},
-		// &model.Jurusans{},
-		// &model.UKM{},
-		// &model.Universitas{},
+		&model.InfoHouse{},
+		&model.JenisPerca{},
+		&model.PekerjaPerca{},
+		&model.PercaBaju{},
+		&model.PercaSepatu{},
+		&model.TutorialPerca{},
 	)
 }
