@@ -24,7 +24,7 @@ var (
 func initMigration() {
 	DB.AutoMigrate(
 		&model.Admins{},
-		// &model.Akreditasi{},
+		&model.HousePerca{},
 		// &model.Deskripsi{},
 		// &model.Fakultas{},
 		// &model.FasilitasJurusan{},
