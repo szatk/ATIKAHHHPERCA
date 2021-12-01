@@ -9,7 +9,7 @@ import (
 type PekerjaPerca struct {
 	Id             uint           `gorm:"primaryKey; unique; not null" json:"id"`
 	HousePercaId   uint           `json:"housePercaId"`
-	Nama           string         `gorm:"size:255; not null" json:"namaDepan"`
+	Nama           string         `gorm:"size:255; not null" json:"nama"`
 	NoTelepon      string         `gorm:"size:255;not null; unique" json:"noTelepon"`
 	Alamat         string         `gorm:"size:1000;not null" json:"alamat"`
 	Kabupaten_Kota string         `gorm:"size:255;not null" json:"kabupaten_kota"`
