@@ -1,6 +1,7 @@
 # ATIKAHHHPERCA
 HOLA! This is my first Project use Golang. 
 Project's Name is ATIKAH PERCA. Honestly this is my new repository for this project cause my first repository so bad and dirty (i dont like it, confused).
+U can see my first repository here "https//github.com/szatk/MINIPROJECT-BACKEND"
 So that's why i choose to make one new.
 
 ATIKAH PERCA is an application/website to show and how to make perca can re-use. 
