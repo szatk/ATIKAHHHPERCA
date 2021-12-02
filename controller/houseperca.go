@@ -11,7 +11,7 @@ import (
 )
 
 // Create House Perca
-func HousePercaRegister(c echo.Context) error {
+func CreateHousePerca(c echo.Context) error {
 	var houseperca model.HousePerca
 	c.Bind(&houseperca)
 

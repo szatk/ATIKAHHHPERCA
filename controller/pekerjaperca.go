@@ -11,7 +11,7 @@ import (
 )
 
 // Register PekerjaPerca
-func PekerjaPercaRegister(c echo.Context) error {
+func CreatePekerjaPerca(c echo.Context) error {
 	var pekerja model.PekerjaPerca
 	c.Bind(&pekerja)
 

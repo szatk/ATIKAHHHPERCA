@@ -33,7 +33,7 @@ func New() *echo.Echo {
 	//CRUD HOUSEPERCA
 	e.GET("/houseperca", controller.GetAllHousePerca)
 	e.GET("/houseperca/:id", controller.GetHousePercaById)
-	e.POST("/houseperca", controller.HousePercaRegister)
+	e.POST("/houseperca", controller.CreateHousePerca)
 	e.DELETE("/houseperca/:id", controller.DeleteHousePerca)
 	e.PUT("/houseperca/:id", controller.UpdateHousePerca)
 
@@ -54,7 +54,7 @@ func New() *echo.Echo {
 	//CRUD PEKERJA PERCA
 	e.GET("/pekerjaperca", controller.GetAllPekerjaPerca)
 	e.GET("/pekerjaperca/:id", controller.GetPekerjaPecraById)
-	e.POST("/pekerjaperca", controller.PekerjaPercaRegister)
+	e.POST("/pekerjaperca", controller.CreatePekerjaPerca)
 	e.DELETE("/pekerjaperca/:id", controller.DeletePekerjaPerca)
 	e.PUT("/pekerjaperca/:id", controller.UpdatePekerjaPerca)
 
