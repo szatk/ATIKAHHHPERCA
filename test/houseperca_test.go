@@ -27,6 +27,6 @@ func TestGetHousePerca(t *testing.T) {
 
 	result := e.GET("/houseperca").Expect().Status(http.StatusOK).JSON().Object()
 
-	result.Value("message").String().Contains("Successful create data")
+	result.Value("message").String().Contains("Successful retrieve data")
 	result.Value("data").Array().NotEmpty()
 }

@@ -12,7 +12,7 @@ func init() {
 	config.InitDB()
 
 	jenisperca := &m_jenisperca.JenisPerca{
-		NamaJenis: "Satin",
+		NamaJenis: "Katun",
 	}
 	if err := config.DB.Create(&jenisperca).Error; err != nil {
 		fmt.Println("error")
@@ -25,8 +25,8 @@ func TestGetJenisPerca(t *testing.T) {
 
 	e := GetHTTPExpect(t)
 
-	result := e.GET("/jeniserca").Expect().Status(http.StatusOK).JSON().Object()
+	result := e.GET("/jenisperca").Expect().Status(http.StatusOK).JSON().Object()
 
-	result.Value("message").String().Contains("hope")
+	result.Value("message").String().Contains("Successful retrieve data")
 	result.Value("data").Array().NotEmpty()
 }
